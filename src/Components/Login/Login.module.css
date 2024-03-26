@@ -1,0 +1,170 @@
+.loginMain {
+  background-image: url("../../Images/bglogin.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginContainer {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.logininnerMain {
+  padding-top: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 553px;
+  height: 485px;
+  border-radius: 27px;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 0.0546) 0%,
+    rgba(153, 153, 153, 0.0585) 100%
+  );
+  border: 1px solid rgba(255, 255, 255, 0.4);
+}
+.logoImg {
+  width: 27px;
+  height: 67px;
+}
+.loginMainHeading {
+  padding-top: 20px;
+  font-family: Inria Sans;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.loginText {
+  padding-top: 15px;
+  width: 35%;
+  height: 34px;
+  font-family: Inria Sans;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(220, 220, 220, 1);
+}
+.loginInputMian {
+  padding-top: 25px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.logininput {
+  padding-left: 25px;
+  width: 388px;
+  height: 53px;
+  border-radius: 36px;
+  border: none;
+  background-color: rgb(75, 69, 91);
+
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(206, 206, 206, 1);
+}
+input::placeholder {
+  font-family: Inria Sans;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(206, 206, 206, 1);
+}
+.loginbtn {
+  margin-top: 60px;
+  width: 146px;
+  height: 53px;
+  border-radius: 44px;
+  background: rgba(4, 120, 227, 1);
+  border: 0;
+  box-shadow: 0px 3px 8.399999618530273px 0px rgba(255, 255, 255, 0.23);
+  cursor: pointer;
+  font-family: Inria Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+
+/* Responive  */
+
+@media (max-width: 1400px) {
+  .loginContainer {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+}
+@media (max-width: 565px) {
+  .logininnerMain {
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 100%;
+  }
+  .loginContainer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .loginInputMian {
+    width: 100%;
+    padding-top: 25px;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .logininput {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 25px;
+    width: 80%;
+    height: 53px;
+  }
+  .loginText {
+    padding-top: 15px;
+    width: 50%;
+    height: 34px;
+    font-family: Inria Sans;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: rgba(220, 220, 220, 1);
+  }
+  .loginbtn {
+    margin-top: 50px;
+    width: 126px;
+    height: 43px;
+    font-size: 18px;
+  }
+  .logininnerMain {
+    height: 455px;
+  }
+}

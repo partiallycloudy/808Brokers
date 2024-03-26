@@ -1,0 +1,62 @@
+tbody, td, tfoot, th, thead, tr {
+    border-color: inherit;
+    border-style: none;
+    border-width: 0;
+}
+.table{
+    --bs-table-color-type: rgba(205, 205, 205, 1) !important;
+     
+    --bs-table-bg: none !important;
+    min-width: 480px;
+}
+.table>:not(caption)>*>* {
+    padding: 4px 5px !important;
+    padding-left: 20px !important;
+}
+tr{
+    padding-left: 20px !important;
+}
+.mainfolder{
+    display:flex ;
+    align-items: center;
+    justify-content: space-between;
+}
+.tablemainhead{
+    border-bottom: 1px solid rgba(53, 53, 53, 1);
+
+}
+th{
+    font-family: Inria Sans;
+font-size: 16px;
+font-weight: 400;
+line-height: 19px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(205, 205, 205, 1);
+
+}
+td{
+    font-family: Inder;
+font-size: 12px;
+font-weight: 400;
+line-height: 15px;
+letter-spacing: 0em;
+text-align: left;
+color: rgba(205, 205, 205, 1);
+}
+.foldertext{
+    display: flex;
+    gap: 7px;
+    justify-content: center;
+    align-items: center;
+
+
+}
+/* .datediv{
+    width: 150px;
+
+}
+.textdiv{
+    width: 140px;
+
+} */

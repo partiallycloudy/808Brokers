@@ -1,0 +1,544 @@
+.conferenceMain {
+  display: flex;
+}
+.conferenceContainerMain {
+  width: calc(100% - 106px);
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../../Images/bglogin.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  gap: 15px;
+}
+.conferenceContainer {
+  width: 100%;
+  padding-top: 30px;
+}
+.leftSideMain {
+  width: 100%;
+  padding-left: 20px;
+}
+.HeadingMain {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+
+.headingText {
+  font-family: Inria Sans;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.headingbtn {
+  font-family: Inria Sans;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+  background: rgba(0, 98, 246, 0.05);
+  border: 0.2px solid rgba(102, 102, 102, 0.6);
+  /* border-image-source: linear-gradient(118.87deg, rgba(254, 204, 171, 0.6) 10.36%, rgba(102, 102, 102, 0.6) 92.75%); */
+  width: 57px;
+  height: 22.8px;
+  border-radius: 5.31px;
+}
+.inviteMain {
+  padding-top: 70px;
+}
+.invitebtnText {
+  display: flex;
+  justify-content: space-between;
+}
+.inviteButton {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.inviteBtn {
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: space-around;
+  border: 0.2px solid rgba(102, 102, 102, 0.6);
+  width: 57px;
+  height: 22.8px;
+  border-radius: 5.31px;
+  background: rgba(0, 98, 246, 0.05);
+
+  font-family: Inria Sans;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+
+  /* border-image-source: linear-gradient(118.87deg, rgba(254, 204, 171, 0.6) 10.36%, rgba(102, 102, 102, 0.6) 92.75%); */
+}
+.inviteText {
+  font-family: Inria Sans;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 17px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.inviteTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 57px;
+  height: 22.8px;
+  border-radius: 5.31px;
+  color: rgba(246, 0, 0, 0.05);
+  border: 1px solid rgba(246, 0, 0, 0.6);
+  font-family: Inria Sans;
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 12px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(246, 0, 0, 1);
+}
+.videoCallMain {
+  padding-top: 30px;
+  display: flex;
+  gap: 25px;
+}
+.img1 {
+  width: 49%;
+}
+.callButtons {
+  padding-top: 60px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.callBtn1 {
+  width: 87px;
+  height: 66px;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 0.378) 0%,
+    rgba(153, 153, 153, 0.405) 100%
+  );
+  border: 1px solid #666666;
+
+  border-image-source: linear-gradient(
+    118.87deg,
+    #404040 10.36%,
+    #666666 92.75%
+  );
+}
+.callBtn2 {
+  width: 121px;
+  height: 92px;
+  border-radius: 9px;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 0.378) 0%,
+    rgba(153, 153, 153, 0.405) 100%
+  );
+  border: 1px solid #666666;
+
+  border-image-source: linear-gradient(
+    118.87deg,
+    #404040 10.36%,
+    #666666 92.75%
+  );
+}
+.callIcon1 {
+  width: 24px;
+}
+.callIcon2 {
+  width: 30px;
+}
+.callIcon3 {
+  width: 49px;
+}
+.callIcon4 {
+  width: 36px;
+}
+.callIcon5 {
+  width: 30px;
+}
+.bucketMain {
+  padding-top: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* RightSide  */
+
+.rightSideMain {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.rightContainer {
+  padding-left: 30px;
+  padding-top: 50px;
+  width: 449px;
+  height: 1024px;
+  border-radius: 50px 0px 0px 50px;
+  border-right: 1px solid rgba(102, 102, 102, 0.33);
+  /* border-image-source: linear-gradient(180deg, rgba(255, 255, 255, 0.335) 0%, rgba(102, 102, 102, 0.33) 100%); */
+
+  background: linear-gradient(
+    180deg,
+    rgba(40, 47, 57, 0.7) 0%,
+    rgba(40, 47, 57, 0.357) 100%
+  );
+}
+.headingMain {
+  display: flex;
+  gap: 20px;
+}
+.rightHeading {
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 102, 255, 1);
+  cursor: pointer;
+}
+.rightHeading2 {
+  cursor: pointer;
+  font-family: Inria Sans;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.pollHeadingmain {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding-top: 60px;
+}
+.pollHeading {
+  font-family: Inria Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+}
+.pollIcon {
+  margin-top: 5px;
+}
+.pollText {
+  padding-top: 8px;
+  font-family: Inder;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(169, 169, 169, 1);
+}
+.perButtonmain {
+  margin-top: 40px;
+  width: 375px;
+  height: 51px;
+  border-radius: 27px;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 0.0546) 0%,
+    rgba(153, 153, 153, 0.0585) 100%
+  );
+
+  border: 1px solid #666666;
+
+  /* border-image-source: linear-gradient(118.87deg, #404040 10.36%, #666666 92.75%); */
+}
+.perButtonmain2 {
+  margin-top: 20px;
+  width: 375px;
+  height: 51px;
+  border-radius: 27px;
+  background: linear-gradient(
+    180deg,
+    rgba(219, 219, 219, 0.0546) 0%,
+    rgba(153, 153, 153, 0.0585) 100%
+  );
+
+  border: 1px solid #666666;
+
+  /* border-image-source: linear-gradient(118.87deg, #404040 10.36%, #666666 92.75%); */
+}
+.perbtn {
+  padding-left: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 113px;
+  width: 93%;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+.perbtn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 32px;
+  gap: 123px;
+  width: 242px;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+.perbtn3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 36px;
+  gap: 130px;
+  width: 268px;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+.perText {
+  font-family: Inder;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: rgba(255, 255, 255, 1);
+}
+.perText2 {
+  font-family: Inder;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 102, 255, 1);
+}
+.totalText {
+  padding-top: 20px;
+  padding-left: 5px;
+  font-family: Inder;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: rgba(0, 102, 255, 1);
+}
+.noteImage {
+  margin-top: 40px;
+}
+.plusImage {
+  width: 88%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+@media (max-width:1400px) {
+  .rightContainer{
+    padding-left: 20px;
+    padding-top: 50px;
+    width: 390px;
+}
+.noteImg{
+  width: 93%;
+
+}
+.perButtonmain {
+  margin-top: 40px;
+  width: 92%;
+  height: 51px;
+}
+.perButtonmain2 {
+  margin-top: 20px;
+  width: 92%;
+}
+.perbtn2 {
+  
+  padding-left: 32px;
+  gap: 106px;
+  width: 242px;
+  height: 49px;
+
+}
+.perbtn3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 36px;
+  gap: 115px;
+  width: 268px;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+}
+@media (max-width:1199.5px) {
+    .conferenceContainerMain {
+        width: 100%;
+        display: flex;
+        gap: 0px;
+    }
+    .rightContainer {
+        padding-left: 20px;
+        padding-right: 10px;
+        padding-top: 0px;
+        width: 100%;
+        height: 1024px;
+    }
+    .perButtonmain{
+        margin-top: 40px;
+        width: 100%;
+        height: 51px;
+    
+    }
+    
+    .noteImg{
+        width: 100%;
+
+    }
+    .plusImage{
+        width: 98%;
+        margin-top: 20px;
+        display: flex;
+        justify-content: flex-end;
+    }
+.perButtonmain2 {
+    margin-top: 20px;
+    width: 100%;
+    height: 51px;
+  
+}
+}
+@media (max-width:720px) {
+    .videoCallMain{
+        padding-top: 30px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+    .img1 {
+        width: 100%;
+    }
+    
+}
+@media (max-width:630px) {
+    .callBtn1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 40px;
+        height:35px;
+    }
+    
+.callIcon1 {
+    width: 18px;
+}
+.callIcon2 {
+    width: 20px;
+}
+.callIcon3 {
+    width: 28px;
+}
+.callIcon4 {
+    width: 20px;
+}
+.callIcon5 {
+    width: 20px;
+}
+.callBtn2{
+    width: 70px;
+    height: 54px;
+}
+.headingText {
+    font-size: 26px;
+}
+.iconImg{
+    width: 12px;
+
+}
+.HeadingMain {
+    gap: 15px;
+}
+.rightSideMain {
+    width: 3%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+}
+@media (max-width:400px) {
+  .perbtn{
+    padding-left: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 84px;
+    width: 85%;
+    height: 49px;
+    border-radius: 27px;
+    background: rgba(0, 102, 255, 1);
+    border: none;
+}
+.perbtn2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 36px;
+  gap: 80px;
+  width: 66%;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+.perbtn3 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 35px;
+  gap: 100px;
+  width: 74%;
+  height: 49px;
+  border-radius: 27px;
+  background: rgba(0, 102, 255, 1);
+  border: none;
+}
+}
+
+@media (max-width:500px){
+  .conferenceContainerMain {
+    width: calc(100% - 42px);
+  }
+}
+@media (max-width:400px){
+  .conferenceContainerMain {
+    width: calc(100% - 50px);
+  }
+}

@@ -1,0 +1,11 @@
+.slick-arrow{
+    display: none !important;
+}
+.slick-dots li.slick-active button:before {
+    opacity: .75;
+    color: white !important;
+}
+.slick-dots li button:before {
+  
+    color: #ffffff !important;
+}
