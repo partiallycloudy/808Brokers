@@ -1,22 +1,27 @@
-import React from 'react'
-import { Routes, Route } from "react-router-dom"
-import Login from './Components/Login/Login'
-import Dashboard from './Components/Dashboard/Dashboard'
-import SideBar from './Components/SideBar/SideBar'
-import Conference from './Components/Conference/Conference'
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Conference from "./Components/Conference/Conference";
+import Dashboard from "./Components/Dashboard/Dashboard";
+import Login from "./Components/Login/Login";
+import ProtectedRoute from "./auth/protected-route";
 
 const App = () => {
   return (
     <>
-     <Routes>
-      
-  <Route path="/" element={<Login />} />
-  <Route path="/dashboard" element={<Dashboard />} />
-  <Route path="/conference" element={<Conference />} />
-    </Routes>
-      {/* <SideBar/> */}
-    </>
-  )
-}
+      <Routes>
+        <Route path="/" element={<Login />} />
 
-export default App
+        <Route
+          path="/dashboard"
+          element={<ProtectedRoute component={Dashboard} />}
+        />
+        <Route
+          path="/conference"
+          element={<ProtectedRoute component={Conference} />}
+        />
+      </Routes>
+    </>
+  );
+};
+
+export default App;

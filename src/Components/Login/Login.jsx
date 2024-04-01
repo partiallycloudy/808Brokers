@@ -1,8 +1,15 @@
 import React from "react";
 import styles from "./Login.module.css";
 import Image from "../../Images/phone.png";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 const Login = () => {
+  const navigate = useNavigate()
+  const { loginWithRedirect, user, isLoading } = useAuth0();
+  if(isLoading) return <div>Loading</div>
+  if(user) {
+    navigate('/dashboard')
+  }
   return (
     <div className={styles.loginMain}>
       <div className={styles.loginContainer}>
@@ -14,7 +21,7 @@ const Login = () => {
           <div className={styles.loginText}>
             You will be directed to the homepage
           </div>
-          <div className={styles.loginInputMian}>
+          {/* <div className={styles.loginInputMian}>
             <input
               type="text"
               name=""
@@ -29,12 +36,12 @@ const Login = () => {
               placeholder="Password"
               className={styles.logininput}
             />
-          </div>
+          </div> */}
           <div className={styles.loginButtonMain}>
-            <Link to="/dashboard">
-            <button className={styles.loginbtn}>Login</button>
+            <button className={styles.loginbtn}  onClick={() => loginWithRedirect({
+              connection: "google-oauth2"
+            })}>Login</button>
             
-            </Link>
           </div>
         </div>
       </div>

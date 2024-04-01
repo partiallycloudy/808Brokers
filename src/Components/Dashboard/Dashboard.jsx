@@ -1,50 +1,47 @@
-import React from 'react'
-import styles from "./Dashboard.module.css"
-import SideBar from '../SideBar/SideBar';
-import Image2 from "../../Images/card1.png"
-import Image3 from "../../Images/crdicn.png"
-import Dashtable from './Dashtable';
-import Image1 from "../../Images/btnimg.png"
-import Image4 from "../../Images/graphline.png"
-import ThIcon from "../../Images/thicn1.png"
-import ThIcon2 from "../../Images/thicn2.png"
-import ThIcon3 from "../../Images/thicn3.png"
-import DashSilder from './DashSilder';
-import { Link } from 'react-router-dom';
-import ThreadsSlider from './ThreadsSlider';
+import React from "react";
+import styles from "./Dashboard.module.css";
+import SideBar from "../SideBar/SideBar";
+import Image2 from "../../Images/card1.png";
+import Image3 from "../../Images/crdicn.png";
+import Dashtable from "./Dashtable";
+import Image1 from "../../Images/btnimg.png";
+import Image4 from "../../Images/graphline.png";
+import ThIcon from "../../Images/thicn1.png";
+import ThIcon2 from "../../Images/thicn2.png";
+import ThIcon3 from "../../Images/thicn3.png";
+import DashSilder from "./DashSilder";
+import { Link } from "react-router-dom";
+import ThreadsSlider from "./ThreadsSlider";
+import { withAuthenticationRequired } from "@auth0/auth0-react";
 const Dashboard = () => {
   return (
     <div className={styles.dashMain}>
-        <SideBar/>
+      <SideBar />
 
-        <div className={styles.dashContainer}>
-            <div className={styles.leftSectionMain}>
-                <div className={styles.buttonImageMain}>
-                    <img src={Image1} alt="" className={styles.btnImg} />
-                    <div className={styles.button}>
-                        <button className={styles.imgBtn}>
-                        DISCOVER
-                        </button>
-                    </div>
-                </div>
-
-                <div className={styles.tableMain}>
-                    <Dashtable/>
-                </div>
+      <div className={styles.dashContainer}>
+        <div className={styles.leftSectionMain}>
+          <div className={styles.buttonImageMain}>
+            <img src={Image1} alt="" className={styles.btnImg} />
+            <div className={styles.button}>
+              <button className={styles.imgBtn}>DISCOVER</button>
             </div>
-            <div className={styles.rightSectionMain}>
-        <div className={styles.cardMain}>
-        <div className={styles.card1Main}>
+          </div>
 
-            <Link to="/conference">
+          <div className={styles.tableMain}>
+            <Dashtable />
+          </div>
+        </div>
+        <div className={styles.rightSectionMain}>
+          <div className={styles.cardMain}>
+            <div className={styles.card1Main}>
+              <Link to="/conference">
                 <img src={Image2} alt="" className={styles.card1Img} />
-            </Link>
+              </Link>
             </div>
-           
 
             <div className={styles.card2Main}>
-<DashSilder/>
-                {/* <div className={styles.iconMain}>
+              <DashSilder />
+              {/* <div className={styles.iconMain}>
                 <img src={Image3} alt="" className={styles.cardIcon} />
 
                 </div>
@@ -58,9 +55,9 @@ const Dashboard = () => {
                     <img src={Image4} alt="" className={styles.graphlineImg} />
                 </div> */}
             </div>
-        </div>
-        <div className={styles.threadsMain}>
-            <ThreadsSlider/>
+          </div>
+          <div className={styles.threadsMain}>
+            <ThreadsSlider />
             {/* <div className={styles.threadHeading}>
             Threads
             </div>
@@ -130,12 +127,12 @@ const Dashboard = () => {
                 </div>
             </div>
             <div className={styles.thLine}></div> */}
+          </div>
         </div>
-            </div>
-        </div>
-      
+      </div>
     </div>
-  )
-}
-
-export default Dashboard
+  );
+};
+export default withAuthenticationRequired(Dashboard, {
+  onRedirecting: () => <div>Loading </div>,
+});
